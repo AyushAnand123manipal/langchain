@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugging Face Chatbot</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-lg rounded">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h3 class="mb-1">💬 Hugging Face Chatbot</h3>
+                        <small class="fst-italic">Free tier - please go slow</small>
+                    </div>
+                    <div class="card-body">
+                        <div id="chat-container" class="chat-box mb-3 p-3"></div>
+                        <div class="input-group">
+                            <input type="text" id="user-input" class="form-control" placeholder="Type your message..." autocomplete="off">
+                            <button id="send-btn" class="btn btn-primary">Send</button>
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <small>Powered by <strong>google/flan-t5-small</strong></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
